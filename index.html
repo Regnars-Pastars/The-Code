@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Viss par futbolu</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!-- Side Menu -->
+    <div class="side-menu">
+        <div class="logo">
+            <a href="javascript:location.reload()" onclick="location.href='#home'">
+                <img src="worldcup.webp" alt="Mājaslapas logo">
+            </a>
+        </div>
+
+        <nav>
+            <a href="#home">Sākums</a>
+            <a href="#awards">Meklēt gadu</a>
+            <a href="#clubs">Meklēt klubu</a>
+            <a href="#about">Par šo mājaslapu</a>
+            <a href="#me">Par mani</a>
+        </nav>
+
+    </div>
+
+    <!-- Main -->
+    <main id="home">
+
+        <p class="small-title">FUTBOLA VĒSTURE</p>
+
+        <h1>
+            Futbola apbalvojumi<br>
+            <span>pēc izvēlētā gada</span>
+        </h1>
+
+        <p class="intro">
+            Uzzini ko vairāk par futbola individuālo apbalvojumu ieguvējiem kādā no gadiem un uzzini vairāk par kādu no komandām.
+        </p>
+
+        <section id="awards" class="search-section">
+
+            <h2>Atklāj kas, ko, kad saņēma!</h2>
+
+            <p>
+                Ievadi gadu, lai uzzinātu, kādus individuālos apbalvojumus izsniedza tajā gadā.
+                Jā vēlies uzzināt par pašiem pirmsākumiem un kā radās šis brīnišķīgias sports ievadi "1863".
+            </p>
+            <p class = "small-text">
+                <b>Individuālie apbalvojumi:</b> (World Cup Winner, World Cup Golden Boot, World Cup Golden Ball, Ballon d'Or, UEFA Champions League Player of the Season, UEFA Men's Player of the Year, The Best FIFA Men's Player, Kopa Trophy, Yashin Trophy, FIFA Puskás Award, Golden Boy, IFFHS World's Best Goalkeeper)
+            </p>
+            <div class="search-box">
+
+                <input type="number" min="1930" max="2027" id="yearInput" placeholder="2022">
+                <button onclick="searchYear()">
+                    Aiziet
+                </button>
+
+            </div>
+
+            <div id="result" class="result"></div>
+
+        </section>
+
+        <section id="clubs" class="clubs-section">
+            <h2>Atklāj ko vairak pār kādu no lielākajiem futbola klubiem!</h2>
+
+            <p>
+                Ievadi komandas nosaukumu, lai uzzinātu vairāk par to un tās sasniegumiem. (Pieejams tikai angliski)
+            </p>
+            <p class = "small-text">
+                Klubi no <b>lielākajām līgām:</b> (La Liga, Premier League, Serie A, Bundesliga, Ligue 1)
+            </p>
+            <div class="search-box">
+                <input type="text" id="teamInput" placeholder="Barcelona" maxlength = "20">
+                <button onclick="searchTeam()">
+                    Aiziet
+                </button>
+            </div>
+
+            <div id="teamResult" class="result"></div>
+
+        </section>
+        <section id="about" class="info-section">
+            <h2>Par šo mājaslapu</h2>
+
+            <p>
+                Šo mājaslapu es izveidoju, lai varētu parādit ko es māku,
+                un priekš tiem kuriem interesē individuālo apbalvojumu ieguvēji iepriekšējos gados un uzzināt ko jaunu par kādu klubu.
+            </p>
+
+        </section>
+
+
+        <section id="me" class="info-section">
+            <h2>Par mani</h2>
+
+            <p>
+                Man ļoti patīk futbols, un jau kopš bērnības es vienmēr esmu izvēlējies paspārdīt bumbu pa pagalmu.
+                Tāpēc tapa šī nelielā majaslapa, lai varētu redzēt kādi individuālie apbalvojumi tika izdalīti kādiem spēlētājiem jau kopš futbola pirmsākumiem
+                un uzzināt nedaudz vairāk par lielākajām futbola komandām.
+            </p>
+
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Navigācija</h3>
+                <a href="#home">Sākums</a>
+                <a href="#awards">Individualie apbalvojumi</a>
+                <a href="#clubs">Vairāk par klubiem</a>
+                <a href="#about">Par šo mājaslapu</a>
+                <a href="#me">Par mani</a>
+            </div>
+            <div class="footer-column">
+                <h3>Kontakti</h3>
+                <p>
+                    <b style="color: #3c8d40">RP Football</b>
+                </p>
+                <p>Epasts: football@example.com</p>
+                <p>Tel: +371 12345678</p>
+            </div>
+            <div class="footer-column">
+                <h3>Seko man</h3>
+                <div class="social-media">
+                    <a href="https://hevy.com/profile" target="_blank">
+                        <i class="bi bi-lungs"></i></a>
+                    <a href="https://www.tiktok.com/@_regnars" target="_blank">
+                        <i class="bi bi-tiktok"></i></a>
+                    <a href="https://www.instagram.com/08_regnars/" target="_blank">
+                        <i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Paldies!</h3>
+                <p>Ceru, ka uzzināji ko vairāk pēc manas lapas apskatīšanas</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
